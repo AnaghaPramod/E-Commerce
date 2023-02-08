@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat+Alternates&family=Nanum+Gothic&family=Playfair+Display:wght@600&family=Urbanist:wght@200&display=swap');
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card-img-top{
+    width:200px;
+    height: 250px;
+}
+
+.card-img-top:hover{
+    transform: scale(1.25);
+    transition: 0.5;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    
+}
+

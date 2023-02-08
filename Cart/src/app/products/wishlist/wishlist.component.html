@@ -1,0 +1,43 @@
+<div class="container text-center m-5 p-3" >
+    <div class="row" *ngIf="eMsg">
+        <div class="col m-5 p-5">
+        <img src="https://assets.materialup.com/uploads/87d4df96-a55f-4f4b-9a17-a696eded97f3/preview.gif" alt="">
+        <h5 class="p-3">Your Wishlist is Empty</h5>
+        <button id="btn" class="btn text-light rounded-pill p-2">Shop Now</button>
+    </div>
+</div>
+
+
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let product of wishlist   ">
+                <div class="card h-100 align-items-center  p-3">
+                    <!-- Product image-->
+                    <img class="card-img-top" [src]="product.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{product.title}}</h5>
+                            <!-- Product price-->
+                            ${{product.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button  class="btn btn-outline-danger mt-auto" (click)="deletewish(product)"> 
+                                <i class="fa fa-trash"></i>
+                            </button>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                            <button (click)="addtocart(product)" class="btn btn-outline-success mt-auto" ><i class="fa fa-cart-plus"></i></button></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

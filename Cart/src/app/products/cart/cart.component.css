@@ -1,0 +1,13 @@
+table, thead, tr, th, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+#btn{
+    background-color: rgb(185, 102, 102);
+}
+#img{
+    height:400px;
+    width:400px;
+    padding: 1cm;
+}
+
